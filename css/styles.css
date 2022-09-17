@@ -18,7 +18,7 @@ body{
 }
 
 .container{
-    width: 1600px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -29,6 +29,7 @@ body{
     background-color: #fff;
     padding-top: 24px;
     padding-bottom: 25px;
+    border: 1px solid #ECECEC;
 }
 
 h1,
@@ -52,6 +53,8 @@ ul,ol{
 
 .list{
     list-style: none;
+    display: flex;
+    gap: 30px;
 }
 
 img{
@@ -149,8 +152,20 @@ button{
 
 /*--HERO--*/
 
-.hero{
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-hero{
+    padding-top: 0px;
+    padding-bottom: 97px;
+}
+.container-hero{
     background-color: #2F303A;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-title{
@@ -211,31 +226,16 @@ button{
 
 /*--PORTFOLIO--*/
 
-.container-portfolio-section{
-    width: 1170px;
-    margin-left: 215px;
-    margin-right: 215px;
-    margin-bottom: 94px;
-}
-
-.container-filters{
-    width: 575px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 26px;
-    display: flex;
-    gap: 8px;
-}
-
-.container-portfolio-card{
-    display: flex;
+.portfolio-list{
+    display: flex ;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;  
 }
 
+
 .portfolio-card{
-    flex-basis: calc((100%-180px)/9);
+    flex-basis: calc(( 100% - 180px ) / 9);
 }
 
 .portfolio-card:not(:nth-child(3n)){
@@ -247,30 +247,22 @@ button{
 }
 
 .btn-card{
-    flex-basis: calc((100%-32px)/5);
+    flex-basis: calc( (100% - 32px) / 5) ;
 }
 
 
 
 /*--FEATURES--*/
 
-.features-section{
-    width: 1170px;
-    margin-left: 215px;
-    margin-right: 215px;
-    padding-top: 92px;
-}
-
 .features-card{
     flex-basis: calc((100%-90px)/4);
 }
-  
 
-.container-all-features{
-    display: flex;
-    gap: 30px;
-}
-
+.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+  }
 
 .features,
 .filters{
@@ -305,39 +297,18 @@ button{
 
 /*--ACTIVITY--*/
 
-.activity-section{
-    width: 1170px;
-    margin-left: 215px;
-    margin-right: 215px;
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 .activity-card{
     flex-basis: calc((100%-60px)/3);
 }
 
-.container-activity-section{
-    display: flex;
-    gap: 30px;
-}
 
 /*--TEAM--*/
 
-.team-section{
+.container-team{
     background-color: #F5F4FA;;
 }
 
-.container-team{
-    width: 1170px;
-    margin-left: 215px;
-    margin-right: 215px;
-    padding-bottom: 94px;
-}
-
-.container-team-section{
-    display: flex;
-    gap: 30px;
-}
 
 .team-card{
     flex-basis: calc((100%-90px)/4);
@@ -377,12 +348,8 @@ button{
     /* or 171% */
 }
 
-.container-logo{
-    width: 145px;
-}
-
-.container-address{
-    width: 231px;
+.footer-list{
+    list-style: none;
 }
 
 .adress,
