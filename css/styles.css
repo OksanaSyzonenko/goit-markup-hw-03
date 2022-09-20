@@ -157,13 +157,13 @@ button{
     font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--primary-text-color-theme-light);
-    margin-right: 50px;
 }
 
 .contact-email:hover,
 .contact-email:focus{
     color: var(--accent-color);
 }
+
 
 /*--HERO--*/
 
@@ -173,8 +173,6 @@ button{
 }
 
 .hero{
-    padding-top: 0;
-    padding-bottom: 94px;
     padding: 200px 0; 
     background-color: #2F303A;
     text-align: center;
@@ -191,8 +189,8 @@ button{
     text-transform: uppercase;
     color: var(--primary-text-color-theme-dark);
     width: 696px;
-    margin-left: 182px;
-    margin-right: 182px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
 }
 
@@ -270,11 +268,12 @@ button{
     border: 1px solid #EEEEEE;
     flex-basis: calc(( 100% - 60px ) / 3);
 }
-.
+
 
 /*--FEATURES--*/
 
 .features-card{
+    width: 270px;
     flex-basis: calc((100%-90px)/4);
 }
 
@@ -303,7 +302,7 @@ button{
     margin-top: 20px;
     margin-left: 24px;
     margin-right: 24px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .features-text{
@@ -325,13 +324,12 @@ button{
 
 /*--ACTIVITY--*/
 
+
 .about-activity{
     padding-top: 0;
 }
 
-.activity-card{
-    flex-basis: calc((100%-60px)/3);
-}
+
 
 
 /*--TEAM--*/
@@ -354,7 +352,7 @@ button{
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    margin: 50px;
+    margin-bottom: 50px;
 }
 
 .team-name{
@@ -385,8 +383,6 @@ button{
     /* or 171% */
     padding: 60px 0;
 }
-
-.
 
 .footer-list{
     list-style: none;
